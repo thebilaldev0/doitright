@@ -1,0 +1,74 @@
+{
+  "app_name": "Rightwing (doitright.in)",
+  "app_type": "landing_page / hybrid_fullstack",
+  "theme": "Dark sleek modern premium tech (Archetype 5 / Archetype 2 hybrid: Obsidian black, deep slate, electric gold/amber accents, pristine typography)",
+  "typography": {
+    "heading_font": "Cabinet Grotesk, Outfit, sans-serif",
+    "body_font": "Inter, DM Sans, sans-serif",
+    "hierarchy": {
+      "h1": "text-4xl sm:text-5xl lg:text-6xl tracking-tight font-extrabold",
+      "h2": "text-2xl sm:text-3xl lg:text-4xl tracking-tight font-bold",
+      "h3": "text-xl sm:text-2xl font-semibold",
+      "body": "text-base text-slate-300 leading-relaxed"
+    }
+  },
+  "colors": {
+    "background": "#0B0C10",
+    "surface": "#1F2833",
+    "surface_glass": "rgba(31, 40, 51, 0.75)",
+    "primary": "#66FCF1",
+    "accent": "#45A29E",
+    "gold_accent": "#F39C12",
+    "text_primary": "#FFFFFF",
+    "text_secondary": "#C5C6C7",
+    "border": "rgba(102, 252, 241, 0.15)"
+  },
+  "visual_enhancers": {
+    "glassmorphism": "backdrop-blur-xl bg-[#1F2833]/70 border border-[#66FCF1]/20 shadow-[0_8px_32px_rgba(0,0,0,0.37)]",
+    "tracing_beam": "Linear glowing gradient border moving along container edge on hover",
+    "noise_overlay": "Subtle grain overlay for high-end feel"
+  },
+  "grids": {
+    "bento_hero": "grid-cols-1 md:grid-cols-12 gap-8",
+    "services_grid": "grid-cols-1 md:grid-cols-3 gap-8",
+    "testimonials_grid": "grid-cols-1 md:grid-cols-2 gap-8"
+  },
+  "layouts": {
+    "container": "max-w-7xl mx-auto px-4 sm:px-6 lg:px-8",
+    "section_spacing": "py-24 sm:py-32"
+  },
+  "motion": {
+    "transition": "transition-all duration-300 ease-in-out",
+    "hover_lift": "hover:-translate-y-1 hover:shadow-2xl"
+  },
+  "accessibility": {
+    "contrast_ratio": "Meets WCAG AA standard (> 4.5:1 for normal text, > 3:1 for large text)",
+    "focus_states": "focus:ring-2 focus:ring-[#66FCF1] focus:outline-none",
+    "data_testids_mandatory": true
+  },
+  "image_urls": {
+    "hero_workspace": {
+      "category": "Hero Background / Workspace",
+      "url": "https://images.unsplash.com/photo-1621856625680-282ec3a17db8?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA2OTV8MHwxfHNlYXJjaHwyfHxtb2Rlcm4lMjBtaW5pbWFsaXN0JTIwZGlnaXталljdXAlMjBhZ2VuY3klMjB0ZWNobm9sb2d5JTIwcGxhdGZvcm0lMjB3b3Jrc3BhY2V8ZW58MHx8fHwxNzkwNjk3Mzc1fDA&ixlib=rb-4.1.0&q=85",
+      "description": "Modern minimalist digital tech workspace"
+    },
+    "team_collaboration": {
+      "category": "About / Trust Section",
+      "url": "https://images.unsplash.com/photo-1522071820081-009f0129c71c?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjY2NzZ8MHwxfHNlYXJjaHwxfHxidXNpbmVzcyUyMGV4ZWN1dGl2ZSUyMHRlY2glMjB0ZWFtfGVufDB8fHx8MTc4OTY1MTA2MHww&ixlib=rb-4.1.0&q=85",
+      "description": "Executive team tech innovation and collaboration"
+    },
+    "workspace_laptop": {
+      "category": "Services / Platform Showcase",
+      "url": "https://images.unsplash.com/photo-1548430077-773fa74bda9d?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA2OTV8MHwxfHNlYXJjaHwzfHxtb2Rlcm4lMjBtaW5pbWFsaXN0JTIwZGlnaXRhbCUyMGFnZW5jeSUyMHRlY2hub2xvZ3klMjBwbGF0Zm9ybSUyMHdvcmtzcGFjZXxlbnwwfHx8fDE3OTA2OTczNzV8MA&ixlib=rb-4.1.0&q=85",
+      "description": "Laptop displaying digital solutions and tech platform"
+    }
+  },
+  "instructions_to_main_agent": "Build a stunning single-page React TypeScript application for doitright.in based on the pitch deck theme (Rightwing: All-in-one services platform where people get what they seek). Include: 1. Navigation bar with brand logo & links + CTA button. 2. Hero section with headline, subtitle, quick stats, and primary CTA opening the Requirement Form Modal. 3. Services Showcase (Tech, Digital Marketing, Cloud Infrastructure, Strategic Consulting, Dedicated Talent, 24/7 Operations). 4. How It Works (4-step streamlined onboarding & execution flow). 5. Value Points & Trust Metrics. 6. Testimonials from enterprise leaders. 7. Requirement Form Modal with name, email, phone, service needed, preferred timeline, message, and form validation saving submissions to Supabase (or fallback storage / mock API with toast feedback). 8. Footer with quick links and copyright. Ensure all interactive elements include data-testid attributes, high accessibility contrast, and gorgeous glassmorphism UI.",
+  "UNIVERSAL GUIDELINES FOR MAIN AGENT": [
+    "You MUST NOT apply universal transition. Eg: transition: all",
+    "You MUST NOT center align the app container",
+    "Every interaction needs micro-animations - hover states, transitions, parallax effects, and entrance animations",
+    "Use 2-3x more spacing than feels comfortable",
+    "All interactive and key informational elements MUST include data-testid attribute"
+  ]
+}
