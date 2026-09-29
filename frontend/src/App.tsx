@@ -22,6 +22,7 @@ const initialForm: FormState = { name: "", email: "", phone: "", service: "", ti
 
 function App() {
   const [open, setOpen] = useState(false);
+  const [mobileOpen, setMobileOpen] = useState(false);
   const [form, setForm] = useState<FormState>(initialForm);
   const [status, setStatus] = useState<"idle" | "sending" | "success" | "error">("idle");
   const update = (key: keyof FormState, value: string) => setForm((current) => ({ ...current, [key]: value }));
@@ -42,7 +43,8 @@ function App() {
       <a className="brand" href="#top" data-testid="brand-link"><span className="brand-mark">R</span><span>rightwing<span className="brand-dot">.</span></span></a>
       <div className="nav-links" data-testid="desktop-navigation-links"><a href="#services" data-testid="services-nav-link">Services</a><a href="#method" data-testid="method-nav-link">Our method</a><a href="#voices" data-testid="voices-nav-link">Why us</a></div>
       <button className="button button-small button-outline" onClick={() => setOpen(true)} data-testid="nav-requirement-button">Start a conversation <ArrowUpRight size={15} /></button>
-      <button className="mobile-menu" aria-label="Open menu" data-testid="mobile-menu-button"><Menu size={20} /></button>
+      <button className="mobile-menu" aria-label="Open menu" onClick={() => setMobileOpen((current) => !current)} data-testid="mobile-menu-button"><Menu size={20} /></button>
+      {mobileOpen && <div className="mobile-nav-panel" data-testid="mobile-navigation-panel"><a href="#services" onClick={() => setMobileOpen(false)} data-testid="mobile-services-link">Services</a><a href="#method" onClick={() => setMobileOpen(false)} data-testid="mobile-method-link">Our method</a><a href="#voices" onClick={() => setMobileOpen(false)} data-testid="mobile-voices-link">Why us</a><button className="button button-primary" onClick={() => { setMobileOpen(false); setOpen(true); }} data-testid="mobile-requirement-button">Start a conversation <ArrowUpRight size={15} /></button></div>}
     </nav>
 
     <section className="hero container" id="top" data-testid="hero-section">
