@@ -187,7 +187,7 @@ function App() {
           <h1>
             Find what you seek.
             <br />
-            <em>Make it right.</em>
+            <em>Do it right.</em>
           </h1>
           <p className="hero-subtitle">
             Rightwing brings strategy, technology and growth under one roof—so
